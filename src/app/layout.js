@@ -4,10 +4,13 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 
 const inter = Inter({ subsets: [ 'latin' ] });
-
+// use template for every page
 export const metadata = {
-  title: 'Next App',
-  description: 'Next.js starter app',
+  title: {
+    default: "Next.js 14 Homepage",
+    template: "Next.js 14 %s"
+  },
+  description: "Next.js starter app description",
 };
 
 export default function RootLayout({ children }) {
